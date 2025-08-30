@@ -1,7 +1,7 @@
-package org.mclods.observer_pattern.subject.impl;
+package org.mclods.observer_pattern.custom.subject.impl;
 
-import org.mclods.observer_pattern.observers.Observer;
-import org.mclods.observer_pattern.subject.Subject;
+import org.mclods.observer_pattern.custom.observers.Observer;
+import org.mclods.observer_pattern.custom.subject.Subject;
 
 import java.util.ArrayList;
 
