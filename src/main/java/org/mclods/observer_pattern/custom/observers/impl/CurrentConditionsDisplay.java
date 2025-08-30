@@ -1,16 +1,16 @@
-package org.mclods.observer_pattern.observers.impl;
+package org.mclods.observer_pattern.custom.observers.impl;
 
-import org.mclods.observer_pattern.observers.DisplayElement;
-import org.mclods.observer_pattern.observers.Observer;
-import org.mclods.observer_pattern.subject.Subject;
+import org.mclods.observer_pattern.custom.observers.DisplayElement;
+import org.mclods.observer_pattern.custom.observers.Observer;
+import org.mclods.observer_pattern.custom.subject.Subject;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private double temperature;
     private double humidity;
     private double pressure;
 
-    public CurrentConditionsDisplay(Subject weatherData) {
-        weatherData.registerObserver(this);
+    public CurrentConditionsDisplay(Subject subject) {
+        subject.registerObserver(this);
     }
 
     @Override
