@@ -4,6 +4,6 @@ import org.mclods.simple_factory.product.Pizza;
 
 public class VeggiePizza extends Pizza {
     public VeggiePizza() {
-        super("Veggie Pizza");
+        name = "Veggie Pizza";
     }
 }
