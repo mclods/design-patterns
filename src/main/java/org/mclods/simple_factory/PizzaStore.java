@@ -1,7 +1,6 @@
 package org.mclods.simple_factory;
 
-import org.mclods.simple_factory.Pizza.Pizza;
-import org.mclods.simple_factory.SimplePizzaFactory.SimplePizzaFactory;
+import org.mclods.simple_factory.product.Pizza;
 
 public class PizzaStore {
     public Pizza orderPizza(String type) {

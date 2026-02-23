@@ -1,4 +1,4 @@
-package org.mclods.simple_factory.Pizza;
+package org.mclods.simple_factory.product;
 
 public abstract class Pizza {
     String name;
