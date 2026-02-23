@@ -2,17 +2,21 @@ package org.mclods.factory_pattern.creator;
 
 import org.mclods.factory_pattern.product.Pizza;
 
+import java.util.Optional;
+
 public abstract class PizzaStore {
-    public final Pizza orderPizza(String type) {
-        Pizza pizza = createPizza(type);
+    public final Optional<Pizza> orderPizza(String type) {
+        Optional<Pizza> op = createPizza(type);
 
-        pizza.prepare();
-        pizza.bake();
-        pizza.cut();
-        pizza.box();
+        op.ifPresent(pizza -> {
+            pizza.prepare();
+            pizza.bake();
+            pizza.cut();
+            pizza.box();
+        });
 
-        return pizza;
+        return op;
     }
 
-    public abstract Pizza createPizza(String type);
+    public abstract Optional<Pizza> createPizza(String type);
 }
