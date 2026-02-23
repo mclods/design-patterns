@@ -1,10 +1,10 @@
-package org.mclods.simple_factory.SimplePizzaFactory;
+package org.mclods.simple_factory;
 
-import org.mclods.simple_factory.Pizza.Pizza;
-import org.mclods.simple_factory.Pizza.impl.CheesePizza;
-import org.mclods.simple_factory.Pizza.impl.ClamPizza;
-import org.mclods.simple_factory.Pizza.impl.PepperoniPizza;
-import org.mclods.simple_factory.Pizza.impl.VeggiePizza;
+import org.mclods.simple_factory.product.Pizza;
+import org.mclods.simple_factory.product.impl.CheesePizza;
+import org.mclods.simple_factory.product.impl.ClamPizza;
+import org.mclods.simple_factory.product.impl.PepperoniPizza;
+import org.mclods.simple_factory.product.impl.VeggiePizza;
 
 public class SimplePizzaFactory {
     public static Pizza createPizza(String type) {

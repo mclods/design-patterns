@@ -1,6 +1,6 @@
-package org.mclods.simple_factory.Pizza.impl;
+package org.mclods.simple_factory.product.impl;
 
-import org.mclods.simple_factory.Pizza.Pizza;
+import org.mclods.simple_factory.product.Pizza;
 
 public class PepperoniPizza extends Pizza {
     public PepperoniPizza() {
