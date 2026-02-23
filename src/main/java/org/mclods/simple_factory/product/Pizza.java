@@ -1,11 +1,7 @@
 package org.mclods.simple_factory.product;
 
 public abstract class Pizza {
-    String name;
-
-    public Pizza(String name) {
-        this.name = name;
-    }
+    protected String name;
 
     public void prepare() {
         System.out.printf("Preparing %s...\n", name);
@@ -20,7 +16,7 @@ public abstract class Pizza {
     }
 
     public void box() {
-        System.out.printf("Boxing %s...\n", name);
+        System.out.printf("Boxing %s...\n\n", name);
     }
 
     @Override
