@@ -1,4 +1,4 @@
-package org.mclods.factory_pattern;
+package org.mclods.factory_method_pattern;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

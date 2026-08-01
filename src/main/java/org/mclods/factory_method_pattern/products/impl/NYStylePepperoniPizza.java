@@ -1,6 +1,6 @@
-package org.mclods.factory_pattern.products.impl;
+package org.mclods.factory_method_pattern.products.impl;
 
-import org.mclods.factory_pattern.products.Pizza;
+import org.mclods.factory_method_pattern.products.Pizza;
 
 public class NYStylePepperoniPizza extends Pizza {
     public NYStylePepperoniPizza() {
