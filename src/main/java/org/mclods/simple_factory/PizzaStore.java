@@ -1,6 +1,6 @@
 package org.mclods.simple_factory;
 
-import org.mclods.simple_factory.product.Pizza;
+import org.mclods.simple_factory.products.Pizza;
 
 import java.util.Optional;
 

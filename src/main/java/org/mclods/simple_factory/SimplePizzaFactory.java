@@ -1,10 +1,10 @@
 package org.mclods.simple_factory;
 
-import org.mclods.simple_factory.product.Pizza;
-import org.mclods.simple_factory.product.impl.CheesePizza;
-import org.mclods.simple_factory.product.impl.ClamPizza;
-import org.mclods.simple_factory.product.impl.PepperoniPizza;
-import org.mclods.simple_factory.product.impl.VeggiePizza;
+import org.mclods.simple_factory.products.Pizza;
+import org.mclods.simple_factory.products.impl.CheesePizza;
+import org.mclods.simple_factory.products.impl.ClamPizza;
+import org.mclods.simple_factory.products.impl.PepperoniPizza;
+import org.mclods.simple_factory.products.impl.VeggiePizza;
 
 import java.util.Optional;
 

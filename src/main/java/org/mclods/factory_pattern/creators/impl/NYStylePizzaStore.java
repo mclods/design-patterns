@@ -1,11 +1,11 @@
-package org.mclods.factory_pattern.creator.impl;
+package org.mclods.factory_pattern.creators.impl;
 
-import org.mclods.factory_pattern.creator.PizzaStore;
-import org.mclods.factory_pattern.product.Pizza;
-import org.mclods.factory_pattern.product.impl.NYStyleCheesePizza;
-import org.mclods.factory_pattern.product.impl.NYStyleClamPizza;
-import org.mclods.factory_pattern.product.impl.NYStylePepperoniPizza;
-import org.mclods.factory_pattern.product.impl.NYStyleVeggiePizza;
+import org.mclods.factory_pattern.creators.PizzaStore;
+import org.mclods.factory_pattern.products.Pizza;
+import org.mclods.factory_pattern.products.impl.NYStyleCheesePizza;
+import org.mclods.factory_pattern.products.impl.NYStyleClamPizza;
+import org.mclods.factory_pattern.products.impl.NYStylePepperoniPizza;
+import org.mclods.factory_pattern.products.impl.NYStyleVeggiePizza;
 
 import java.util.Optional;
 
