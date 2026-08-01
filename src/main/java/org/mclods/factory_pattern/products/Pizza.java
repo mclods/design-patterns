@@ -1,4 +1,4 @@
-package org.mclods.factory_pattern.product;
+package org.mclods.factory_pattern.products;
 
 import java.util.ArrayList;
 import java.util.List;

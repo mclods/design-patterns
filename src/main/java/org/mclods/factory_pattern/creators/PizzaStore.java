@@ -1,6 +1,6 @@
-package org.mclods.factory_pattern.creator;
+package org.mclods.factory_pattern.creators;
 
-import org.mclods.factory_pattern.product.Pizza;
+import org.mclods.factory_pattern.products.Pizza;
 
 import java.util.Optional;
 

@@ -1,8 +1,8 @@
 package org.mclods.factory_pattern;
 
-import org.mclods.factory_pattern.creator.PizzaStore;
-import org.mclods.factory_pattern.creator.impl.ChicagoStylePizzaStore;
-import org.mclods.factory_pattern.creator.impl.NYStylePizzaStore;
+import org.mclods.factory_pattern.creators.PizzaStore;
+import org.mclods.factory_pattern.creators.impl.ChicagoStylePizzaStore;
+import org.mclods.factory_pattern.creators.impl.NYStylePizzaStore;
 
 public class PizzaStoreFranchiseTestDrive {
     public static void makeNYStyleCheesePizza() {
