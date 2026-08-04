@@ -1,9 +1,10 @@
-package org.mclods.factory_method_pattern;
+package org.mclods.abstract_factory_pattern;
 
-import org.mclods.factory_method_pattern.creators.PizzaStore;
-import org.mclods.factory_method_pattern.creators.impl.ChicagoPizzaStore;
-import org.mclods.factory_method_pattern.creators.impl.NYPizzaStore;
-import org.mclods.factory_method_pattern.products.Pizza;
+import org.mclods.abstract_factory_pattern.creators.PizzaStore;
+import org.mclods.abstract_factory_pattern.creators.impl.CaliforniaPizzaStore;
+import org.mclods.abstract_factory_pattern.creators.impl.ChicagoPizzaStore;
+import org.mclods.abstract_factory_pattern.creators.impl.NYPizzaStore;
+import org.mclods.abstract_factory_pattern.products.Pizza;
 
 import java.util.Optional;
 
@@ -46,6 +47,26 @@ public class PizzaStoreFranchiseTestDrive {
     public static Optional<Pizza> makeChicagoStyleVeggiePizza() {
         PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
         return chicagoPizzaStore.orderPizza("veggie");
+    }
+
+    public static Optional<Pizza> makeCaliforniaStyleCheesePizza() {
+        PizzaStore californiaPizzaStore = new CaliforniaPizzaStore();
+        return californiaPizzaStore.orderPizza("cheese");
+    }
+
+    public static Optional<Pizza> makeCaliforniaStyleClamPizza() {
+        PizzaStore californiaPizzaStore = new CaliforniaPizzaStore();
+        return californiaPizzaStore.orderPizza("clam");
+    }
+
+    public static Optional<Pizza> makeCaliforniaStylePepperoniPizza() {
+        PizzaStore californiaPizzaStore = new CaliforniaPizzaStore();
+        return californiaPizzaStore.orderPizza("pepperoni");
+    }
+
+    public static Optional<Pizza> makeCaliforniaStyleVeggiePizza() {
+        PizzaStore californiaPizzaStore = new CaliforniaPizzaStore();
+        return californiaPizzaStore.orderPizza("veggie");
     }
 
     public static Optional<Pizza> makeNothing() {
