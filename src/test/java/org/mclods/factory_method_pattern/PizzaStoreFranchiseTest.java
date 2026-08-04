@@ -46,9 +46,17 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeNYStyleCheesePizza();
+        String expectedPizza = """
+                NY Style Sauce and Cheese Pizza made with:
+                * Thin Crust Dough
+                * Marinara Sauce
+                * Grated Reggiano Cheese
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeNYStyleCheesePizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -72,9 +80,20 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeNYStyleClamPizza();
+        String expectedPizza = """
+                NY Style Clam Pizza made with:
+                * Thin Crust Dough
+                * White Sauce
+                * Freshly Chopped Clams
+                * Mozzarella Cheese
+                * Chopped Parsley
+                * Dried Oregano
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeNYStyleClamPizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -97,9 +116,19 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeNYStylePepperoniPizza();
+        String expectedPizza = """
+                NY Style Pepperoni Pizza made with:
+                * Thin Crust Dough
+                * NY Style Red Sauce
+                * Pepperoni
+                * Parmesan Cheese
+                * Dried Oregano
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeNYStylePepperoniPizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -123,9 +152,20 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeNYStyleVeggiePizza();
+        var expectedPizza = """
+                NY Style Veggie Pizza made with:
+                * Thin Crust Dough
+                * Uncooked, Herb-Seasoned Red Sauce
+                * Mozzarella Cheese
+                * Yellow Onions
+                * Thin Sliced Bell Peppers
+                * Sliced Black Olives
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeNYStyleVeggiePizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -146,9 +186,17 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeChicagoStyleCheesePizza();
+        String expectedPizza = """
+                Chicago Style Deep Dish Cheese Pizza made with:
+                * Extra Thick Crust Dough
+                * Plum Tomato Sauce
+                * Shredded Mozzarella Cheese
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeChicagoStyleCheesePizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -170,9 +218,18 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeChicagoStyleClamPizza();
+        String expectedPizza = """
+                Chicago Style Clam Pizza made with:
+                * Deep Dish Crust
+                * Creamy Garlic White Sauce
+                * Sliced Mozzarella
+                * Chopped Sea Clams
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeChicagoStyleClamPizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -196,9 +253,20 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeChicagoStylePepperoniPizza();
+        String expectedPizza = """
+                Chicago Style Pepperoni Pizza made with:
+                * Deep Dish Crust
+                * Crushed Tomato Sauce
+                * Sliced Mozzarella
+                * Pepperoni
+                * Minced Garlic
+                * Grated Parmesan
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeChicagoStylePepperoniPizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
@@ -222,16 +290,27 @@ public class PizzaStoreFranchiseTest {
                 
                 """;
 
-        PizzaStoreFranchiseTestDrive.makeChicagoStyleVeggiePizza();
+        String expectedPizza = """
+                Chicago Style Veggie Pizza made with:
+                * Extra Thick Crust Dough
+                * Crushed Tomato Sauce
+                * Shredded Mozzarella Cheese
+                * Thick Cut Onions
+                * Chunky Green Bell Peppers
+                * Black Olives
+                """;
 
+        var pizza = PizzaStoreFranchiseTestDrive.makeChicagoStyleVeggiePizza();
         assertThat(getConsoleOutput()).isEqualTo(expectedOutput);
+        assertThat(pizza).isNotEmpty();
+        assertThat(pizza.get()).hasToString(expectedPizza);
     }
 
     @Test
     @DisplayName("Test invalid pizza type is handled")
     void testInvalidPizzaTypeIsHandled() {
-        PizzaStoreFranchiseTestDrive.makeNothing();
-
+        var pizza = PizzaStoreFranchiseTestDrive.makeNothing();
         assertThat(getConsoleOutput()).isEqualTo("");
+        assertThat(pizza).isEmpty();
     }
 }

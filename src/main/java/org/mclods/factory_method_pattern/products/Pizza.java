@@ -40,4 +40,16 @@ public abstract class Pizza {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("%s made with:\n".formatted(name));
+        sb.append("* %s\n".formatted(dough));
+        sb.append("* %s\n".formatted(sauce));
+        toppings.forEach(topping -> sb.append("* %s\n".formatted(topping)));
+
+        return sb.toString();
+    }
 }

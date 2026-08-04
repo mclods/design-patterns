@@ -9,7 +9,7 @@ import org.mclods.factory_method_pattern.products.impl.ChicagoStyleVeggiePizza;
 
 import java.util.Optional;
 
-public class ChicagoStylePizzaStore extends PizzaStore {
+public class ChicagoPizzaStore extends PizzaStore {
 
     @Override
     public Optional<Pizza> createPizza(String type) {
